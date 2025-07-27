@@ -2,7 +2,7 @@
 <html lang="az">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>İxtisas Seçimi</title> 
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -23,6 +23,8 @@
             animation: slide 5s ease-in-out infinite;
             display: block;
             margin: 0 auto; /* Şəkili mərkəzləşdirir */
+            max-width: 100%;  /* Şəkilin ekran ölçüsünə uyğun olması üçün */
+            height: auto; /* Şəkilin hündürlüyü avtomatik olacaq */
         }
 
         @keyframes slide {
@@ -59,6 +61,26 @@
 
             .contact-info {
                 font-size: 18px; /* Kontakt məlumatlarını kiçildir */
+            }
+        }
+
+        /* Daha kiçik ekranlar üçün əlavə responsive dizayn */
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 24px; /* Daha kiçik ölçü */
+            }
+
+            #media-logo {
+                width: 80%; /* Şəkili daha böyük olacaq */
+            }
+
+            .majors-list {
+                margin-left: 5%; /* Siyahının sol tərəfini kiçiltmək */
+                font-size: 18px;
+            }
+
+            .contact-info {
+                font-size: 16px; /* Kontakt məlumatlarını kiçildir */
             }
         }
     </style>
