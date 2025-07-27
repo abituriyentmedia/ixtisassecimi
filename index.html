@@ -40,7 +40,27 @@
         .contact-info {
             margin-top: 50px;
             font-size: 24px;
-     }
+        }
+
+        /* Responsive Dizayn üçün əlavə edilmiş kod */
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 32px; /* H1 başlığını kiçildir */
+            }
+
+            #media-logo {
+                width: 60%; /* Şəkili daha kiçik edir */
+            }
+
+            .majors-list {
+                margin-left: 5%; /* Siyahının sol marginini azaldır */
+                font-size: 20px; /* Şrift ölçüsünü kiçildir */
+            }
+
+            .contact-info {
+                font-size: 18px; /* Kontakt məlumatlarını kiçildir */
+            }
+        }
     </style>
 </head>
 <body>
@@ -56,11 +76,14 @@
         <ul>
             <li>Texnologiya müəllimliyi</li>
             <li>Meliorasiya mühəndisliyi</li>
- <li>Ekologiya mühəndisliyi</li>
+            <li>Ekologiya mühəndisliyi</li>
             <li>Aqronomluq</li>
- <li>Balıqçılıq</li>
+            <li>Balıqçılıq</li>
             <li>Meşəçilik</li>
- <li>Şərabçılıq</li>
+            <li>Şərabçılıq</li>
+        </ul>
+    </section>
 
-<h2 align="center" size=50% > İxtisas seçimi üçün bizə yazın: 050-779-36-61 </h2>
-
+    <h2 class="contact-info">İxtisas seçimi üçün bizə yazın: 050-779-36-61</h2> 
+</body>
+</html>
